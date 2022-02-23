@@ -3,7 +3,7 @@ export class Job {
     this.id = data.id
     this.company = data.company
     this.jobTitle = data.jobTitle
-    this.description = data.desctription
+    this.description = data.description
     this.hours = data.hours
     this.rate = data.rate
   }
@@ -15,7 +15,7 @@ export class Job {
           <div class="p-3 clip-text">
             <p>${this.jobTitle} | ${this.description} | ${this.hours} | ${this.company}</p>
             <p>${this.description}</p>
-            <p>$${this.rate}</p>
+            <p>$${this.rate} / hour</p>
             <div class="text-end">
             <button class="btn btn-outline-warning" onclick="app.housesController.editJob('${this.id}')"> Edit </button>
             <button class="btn btn-outline-danger" onclick="app.jobsController.deleteJob('${this.id}')"> delete </button>

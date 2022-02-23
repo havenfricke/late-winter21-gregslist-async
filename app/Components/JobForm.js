@@ -1,4 +1,4 @@
-import { Job } from "../Models/Jobs";
+import { Job } from "../Models/Job.js";
 
 export function getJobForm(job = {}) {
   const jobData = new Job(job)
@@ -17,7 +17,7 @@ export function getJobForm(job = {}) {
                   </div>
                   <div class="mb-3 col-2">
                     <label for="" class="form-label">Description</label>
-                    <input required type="number" class="form-control" name="description" id="description" aria-describedby="helpId"
+                    <input required type="text" class="form-control" name="description" id="description" aria-describedby="helpId"
                       placeholder=""  maxlength = "300" value="${jobData.description}">
                   </div>
                   <div class="mb-3 col-12">
